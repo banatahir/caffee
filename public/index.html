@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>کافێی ئێمە | قاوە، شەربەت و شیرینی</title>
+  <meta name="description" content="قاوەی تازە، شەربەتی سروشتی، سمۆزی و شیرینی. مێنیوی تەواو، حیجزی مێز و داواکاری ئۆنلاین لە کافێی ئێمە.">
+  <meta name="theme-color" content="#fbf6ee">
+  <link rel="canonical" href="https://www.example.com/">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="img/icon-192.png">
+  <link rel="apple-touch-icon" href="img/icon-192.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ckb_IQ">
+  <meta property="og:site_name" content="کافێی ئێمە">
+  <meta property="og:title" content="کافێی ئێمە | قاوە، شەربەت و شیرینی">
+  <meta property="og:description" content="قاوەی تازە، شەربەتی سروشتی، سمۆزی و شیرینی. مێنیوی تەواو، حیجزی مێز و داواکاری ئۆنلاین لە کافێی ئێمە.">
+  <meta property="og:url" content="https://www.example.com/index.html">
+  <meta property="og:image" content="https://www.example.com/img/og-cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="fonts/vazirmatn-arabic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/noto-kufi-arabic-arabic-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>try{var t=localStorage.getItem('cafe-theme');t=t?JSON.parse(t):(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "کافێی ئێمە",
+    "url": "https://www.example.com/",
+    "image": "https://www.example.com/img/og-cover.jpg",
+    "telephone": "+964XXXXXXXXXX",
+    "priceRange": "IQD 500 - 5,500",
+    "servesCuisine": ["قاوە", "شیرینی", "شەربەت", "سمۆزی"],
+    "acceptsReservations": true,
+    "hasMenu": "https://www.example.com/menu.html",
+    "address": { "@type": "PostalAddress", "streetAddress": "REPLACE", "addressLocality": "REPLACE", "addressCountry": "IQ" },
+    "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "08:00", "closes": "16:00" }]
+  }
+  </script>
+</head>
+<body data-page="home">
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="hero-hello"><span aria-hidden="true">👋</span><span id="heroGreeting">بەخێربێیت</span></p>
+        <h1>بۆنێکی تایبەت،<br><em>تامێکی نایاب.</em></h1>
+        <p class="lead" id="heroSub">قاوەی بە وردی ئامادەکراو، شەربەتی تازە و شیرینی گەرم؛ هەر پەرداخێک چیرۆکێکی هەیە.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="menu.html">مێنیو ببینە ←</a>
+          <a class="btn btn-ghost" href="reserve.html">مێزێک حیجز بکە</a>
+        </div>
+        <p class="status-pill" data-status data-state="closed" role="status"><span class="dot" aria-hidden="true"></span><span class="status-text">…</span></p>
+        <div class="hero-stats">
+          <div><strong id="statItems">20</strong><span>بەرهەمی جیاواز</span></div>
+          <div><strong id="statCats">5</strong><span>بەشی مێنیو</span></div>
+          <div><strong>7/7</strong><span>هەموو ڕۆژێک کراوە</span></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img class="main" src="img/latte-art.jpg" srcset="img/latte-art.webp" alt="لاتێ ئاڕت لەسەر سەحنێکی زەرد لەگەڵ گوڵ" width="900" height="1000" fetchpriority="high">
+        <div class="float-card fc-a"><img src="img/orange-juice.webp" alt="" width="54" height="54"><div><strong>شەربەتی تازە</strong><small>هەموو ڕۆژێک</small></div></div>
+        <div class="float-card fc-b"><img src="img/croissant.webp" alt="" width="54" height="54"><div><strong>نانی گەرم</strong><small>لە فڕنەوە</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true"><div class="marquee-track">
+    <span>قاوەی تازە</span><span>شەربەتی سروشتی</span><span>سمۆزی</span><span>چای عێراقی</span><span>کێک و شیرینی</span><span>نانی بەیانی</span>
+    <span>قاوەی تازە</span><span>شەربەتی سروشتی</span><span>سمۆزی</span><span>چای عێراقی</span><span>کێک و شیرینی</span><span>نانی بەیانی</span>
+  </div></div>
+
+  <section class="section"><div class="wrap">
+    <header class="section-head reveal"><p class="eyebrow">بەشەکانی مێنیو</p><h2>شتێک بۆ هەر حاڵەتێک</h2><p>جۆرێک هەڵبژێرە و ڕاستەوخۆ بڕۆ بۆ مێنیوی تەواو.</p></header>
+    <div id="catGrid" class="cat-grid reveal"></div>
+  </div></section>
+
+  <section class="section section-alt"><div class="wrap">
+    <div class="mood reveal">
+      <header class="section-head"><p class="eyebrow">هاوڕێی هەست</p><h2>ئەمڕۆ هەستت چۆنە؟</h2><p>یەک دوگمە هەڵبژێرە و ئێمە شتێکی گونجاو پێشنیار دەکەین.</p></header>
+      <div id="moodChips" class="chips" role="group" aria-label="هەستەکان"></div>
+      <div id="moodResult" aria-live="polite" hidden></div>
+    </div>
+  </div></section>
+
+  <section class="section"><div class="wrap">
+    <header class="section-head reveal"><p class="eyebrow">دڵخوازی کڕیاران</p><h2>زۆرترین داواکراو</h2><p>ئەو بەرهەمانەی هەموو کڕیارێک دووبارەیان دەکاتەوە.</p></header>
+    <ul id="bestGrid" class="grid reveal"></ul>
+    <div class="cta-row center"><a class="btn btn-ghost" href="menu.html">هەموو مێنیو ببینە</a></div>
+  </div></section>
+
+  <section class="section"><div class="wrap">
+    <div class="pick reveal">
+      <img id="pickImg" src="img/latte-art.jpg" alt="" width="800" height="800" loading="lazy">
+      <div class="pick-body">
+        <p class="eyebrow">پێشنیاری ئەمڕۆ</p>
+        <h2 id="pickName">…</h2>
+        <p id="pickDesc"></p>
+        <p class="pick-price" id="pickPrice"></p>
+        <div class="cta-row" style="margin:0"><button id="pickAdd" class="btn btn-primary" type="button">+ زیادکردن بۆ سەبەتە</button><a class="btn btn-ghost" style="color:var(--on-dark);border-color:rgba(255,255,255,.25)" href="menu.html">مێنیو</a></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="section section-alt"><div class="wrap">
+    <header class="section-head reveal"><p class="eyebrow">بۆچی ئێمە</p><h2>هەموو وردەکارییەک گرنگە</h2></header>
+    <div class="features reveal">
+      <div class="feature"><div class="ico" aria-hidden="true">☕</div><h3>قاوەی تازە</h3><p>هەموو پەرداخێک لە دەنکی قاوەی تازە ئامادە دەکرێت.</p></div>
+      <div class="feature"><div class="ico" aria-hidden="true">🍊</div><h3>شەربەتی سروشتی</h3><p>میوەی ڕۆژانە، بێ زیادەی ڕەنگ و بۆنی دەستکرد.</p></div>
+      <div class="feature"><div class="ico" aria-hidden="true">🛍</div><h3>داواکاریی ئاسان</h3><p>لە ماڵەوە داوا بکە، کاتی وەرگرتن هەڵبژێرە و بێ چاوەڕوانی وەربگرە.</p></div>
+    </div>
+  </div></section>
+
+  <section class="section"><div class="wrap">
+    <header class="section-head reveal"><p class="eyebrow">گاڵەری</p><h2>چاوێک لە کافێکەمان</h2></header>
+    <div id="miniGallery" class="mini-gallery reveal"></div>
+    <div class="cta-row center"><a class="btn btn-ghost" href="gallery.html">هەموو وێنەکان</a></div>
+  </div></section>
+
+  <section class="section section-alt"><div class="wrap">
+    <header class="section-head reveal"><p class="eyebrow">ڕای سەردانکەران</p><h2>کڕیارەکانمان چی دەڵێن</h2><p id="reviewSummary" class="rating" hidden></p></header>
+    <div id="reviewTrack" class="review-track" hidden tabindex="0" aria-label="ڕای کڕیاران"></div>
+    <p id="reviewsEmpty" class="empty" hidden>ڕاکانی Google لێرە دەردەکەون کاتێک سێرڤەرەکە بە API-ی Google بەستراوە.</p>
+    <div class="cta-row center"><a class="btn btn-primary" data-cfg="google-review" href="#" target="_blank" rel="noopener">ڕای خۆت لە Google بنووسە</a><a class="btn btn-ghost" data-cfg="instagram" href="#" target="_blank" rel="noopener">لە ئینستاگرام سەردانمان بکە</a></div>
+  </div></section>
+
+  <section class="section"><div class="wrap">
+    <div class="cta-box reveal"><h2>مێزەکەت ئامادەیە؟</h2><p>لە چەند چرکەیەکدا مێزێک حیجز بکە، یان ڕاستەوخۆ داواکارییەکەت بنێرە.</p>
+      <div class="cta-row center"><a class="btn btn-light" href="reserve.html">حیجزکردن</a><a class="btn btn-light" data-cfg="whatsapp" href="#" target="_blank" rel="noopener">واتسئەپ</a></div></div>
+  </div></section>
+    <section class="section" aria-labelledby="nlTitle"><div class="wrap">
+      <div class="newsletter-band reveal">
+        <div><p class="eyebrow">هەواڵی نوێ</p><h2 id="nlTitle">لە تازەترین بەرهەم و ئاهەنگەکان ئاگادار بە</h2><p>مانگانە یەک نامە — بەرهەمی نوێ، ڕووداو و پێشنیار. هیچ سپامێک نییە.</p></div>
+        <form class="newsletter" novalidate>
+          <div class="row"><label class="sr-only" for="nlEmail">ئیمەیڵ</label><input id="nlEmail" name="email" type="email" placeholder="ئیمەیڵەکەت" autocomplete="email" required><input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"><button class="btn btn-primary" type="submit">بەشداربە</button></div>
+          <label class="check"><input type="checkbox" name="consent"><span>ڕازیم ئیمەیڵی هەواڵ وەربگرم و دەتوانم هەر کاتێک ڕایبگرم.</span></label>
+          <p class="form-msg" role="status" hidden></p>
+        </form>
+      </div>
+    </div></section>
+</main>
+
+  <script defer src="js/config.js"></script>
+  <script defer src="js/menu-data.js"></script>
+  <script defer src="js/core.js"></script>
+  <script defer src="js/layout.js"></script>
+  <script defer src="js/card.js"></script>
+  <script defer src="js/home.js"></script>
+  <script defer src="js/forms.js"></script>
+</body>
+</html>

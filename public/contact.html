@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>پەیوەندی | کافێی ئێمە</title>
+  <meta name="description" content="ناونیشان، کاتی کارکردن، نەخشە و فۆرمی پەیوەندی کافێی ئێمە.">
+  <meta name="theme-color" content="#fbf6ee">
+  <link rel="canonical" href="https://www.example.com/contact.html">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="img/icon-192.png">
+  <link rel="apple-touch-icon" href="img/icon-192.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ckb_IQ">
+  <meta property="og:site_name" content="کافێی ئێمە">
+  <meta property="og:title" content="پەیوەندی | کافێی ئێمە">
+  <meta property="og:description" content="ناونیشان، کاتی کارکردن، نەخشە و فۆرمی پەیوەندی کافێی ئێمە.">
+  <meta property="og:url" content="https://www.example.com/contact.html">
+  <meta property="og:image" content="https://www.example.com/img/og-cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="fonts/vazirmatn-arabic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/noto-kufi-arabic-arabic-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>try{var t=localStorage.getItem('cafe-theme');t=t?JSON.parse(t):(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="contact">
+<main>
+  <section class="page-hero"><div class="wrap narrow"><p class="eyebrow">پەیوەندی</p><h1 style="font-size:clamp(2rem,5vw,3.4rem)">سەردانمان بکە یان پەیوەندیمان پێوە بکە</h1><p>چاوەڕێی نامەکەتین. بە زووترین کات وەڵام دەدەینەوە.</p></div></section>
+
+  <section class="section" style="padding-top:16px"><div class="wrap two-col sticky">
+    <div class="reveal">
+      <h2>ناونیشان و کات</h2>
+      <p class="status-pill" data-status data-state="closed" role="status"><span class="dot" aria-hidden="true"></span><span class="status-text">…</span></p>
+      <address style="font-style:normal;margin:1rem 0;font-weight:500" data-cfg="address"></address>
+      <table class="hours"><caption class="sr-only">کاتی کارکردن</caption><tbody id="hoursTable"></tbody></table>
+      <div class="shortcuts">
+        <a class="shortcut" data-cfg="phone-link" href="#"><span class="ico" aria-hidden="true">📞</span><div><strong>پەیوەندی بکە</strong><small data-cfg="phone"></small></div></a>
+        <a class="shortcut" data-cfg="whatsapp-hello" href="#" target="_blank" rel="noopener"><span class="ico" aria-hidden="true">💬</span><div><strong>واتسئەپ</strong><small>وەڵام بە خێرایی</small></div></a>
+        <a class="shortcut" data-cfg="email-link" href="#"><span class="ico" aria-hidden="true">✉️</span><div><strong>ئیمەیڵ</strong><small data-cfg="email"></small></div></a>
+        <a class="shortcut" data-cfg="directions" href="#" target="_blank" rel="noopener"><span class="ico" aria-hidden="true">📍</span><div><strong>ڕێنمایی بۆ کافێ</strong><small>کردنەوە لە Google Maps</small></div></a>
+      </div>
+    </div>
+    <form id="contactForm" class="form reveal" novalidate>
+      <h2>نامەمان بۆ بنێرە</h2>
+      <div class="fields">
+        <label class="field">ناو<input name="name" autocomplete="name" required maxlength="80"></label>
+        <label class="field">ئیمەیڵ<input name="email" type="email" dir="ltr" autocomplete="email" required></label>
+        <label class="field full">نامە<textarea name="message" rows="5" maxlength="2000" required></textarea></label>
+        <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      </div>
+      <button class="btn btn-primary btn-block" type="submit">ناردنی نامە</button>
+      <p class="form-msg" role="status" hidden></p>
+    </form>
+  </div></section>
+  <section class="section" style="padding-top:0"><div class="wrap"><div class="map reveal"><iframe id="mapFrame" title="نەخشەی شوێنی کافێ" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div></section>
+    <section class="section" aria-labelledby="nlTitle"><div class="wrap">
+      <div class="newsletter-band reveal">
+        <div><p class="eyebrow">هەواڵی نوێ</p><h2 id="nlTitle">لە تازەترین بەرهەم و ئاهەنگەکان ئاگادار بە</h2><p>مانگانە یەک نامە — بەرهەمی نوێ، ڕووداو و پێشنیار. هیچ سپامێک نییە.</p></div>
+        <form class="newsletter" novalidate>
+          <div class="row"><label class="sr-only" for="nlEmail">ئیمەیڵ</label><input id="nlEmail" name="email" type="email" placeholder="ئیمەیڵەکەت" autocomplete="email" required><input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"><button class="btn btn-primary" type="submit">بەشداربە</button></div>
+          <label class="check"><input type="checkbox" name="consent"><span>ڕازیم ئیمەیڵی هەواڵ وەربگرم و دەتوانم هەر کاتێک ڕایبگرم.</span></label>
+          <p class="form-msg" role="status" hidden></p>
+        </form>
+      </div>
+    </div></section>
+</main>
+
+  <script defer src="js/config.js"></script>
+  <script defer src="js/menu-data.js"></script>
+  <script defer src="js/core.js"></script>
+  <script defer src="js/layout.js"></script>
+  <script defer src="js/forms.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>حیجزکردن | کافێی ئێمە</title>
+  <meta name="description" content="مێزێک لە کافێی ئێمە حیجز بکە. کاتە بەردەستەکان ئۆتۆماتیک نیشان دەدرێن و پشتڕاستکردنەوە دەنێردرێت.">
+  <meta name="theme-color" content="#fbf6ee">
+  <link rel="canonical" href="https://www.example.com/reserve.html">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="img/icon-192.png">
+  <link rel="apple-touch-icon" href="img/icon-192.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ckb_IQ">
+  <meta property="og:site_name" content="کافێی ئێمە">
+  <meta property="og:title" content="حیجزکردن | کافێی ئێمە">
+  <meta property="og:description" content="مێزێک لە کافێی ئێمە حیجز بکە. کاتە بەردەستەکان ئۆتۆماتیک نیشان دەدرێن و پشتڕاستکردنەوە دەنێردرێت.">
+  <meta property="og:url" content="https://www.example.com/reserve.html">
+  <meta property="og:image" content="https://www.example.com/img/og-cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="fonts/vazirmatn-arabic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/noto-kufi-arabic-arabic-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>try{var t=localStorage.getItem('cafe-theme');t=t?JSON.parse(t):(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="reserve">
+<main>
+  <section class="page-hero"><div class="wrap narrow"><p class="eyebrow">حیجزکردن</p><h1 style="font-size:clamp(2rem,5vw,3.4rem)">مێزەکەت ئامادە دەکەین</h1><p>ڕۆژ و کات هەڵبژێرە — تەنها کاتی بەردەست نیشان دەدرێت.</p></div></section>
+
+  <section class="section" style="padding-top:16px"><div class="wrap two-col sticky">
+    <div class="reveal">
+      <h2>چۆن کار دەکات؟</h2>
+      <div class="perks" style="grid-template-columns:1fr">
+        <div class="perk"><span class="ico" aria-hidden="true">⚡</span><div><strong>خێرا</strong><small>فۆرمەکە کەمتر لە یەک خولەک دەخایەنێت.</small></div></div>
+        <div class="perk"><span class="ico" aria-hidden="true">✅</span><div><strong>پشتڕاستکردنەوە</strong><small>بە تەلەفۆن یان نامە پشتڕاستی دەکەینەوە.</small></div></div>
+        <div class="perk"><span class="ico" aria-hidden="true">📅</span><div><strong>ڕۆژژمێر</strong><small>دوای حیجز دەتوانیت لە ڕۆژژمێرەکەت زیادی بکەیت.</small></div></div>
+      </div>
+      <p class="status-pill" data-status data-state="closed" role="status"><span class="dot" aria-hidden="true"></span><span class="status-text">…</span></p>
+      <p class="note" style="margin-top:1rem">بۆ گروپی گەورەتر لە ١٢ کەس، تکایە <a data-cfg="phone-link" href="#">پەیوەندیمان پێوە بکە</a>.</p>
+    </div>
+    <form id="reserveForm" class="form reveal" novalidate>
+      <h2>حیجزی مێز</h2>
+      <div class="fields">
+        <label class="field">ناو<input name="name" autocomplete="name" required maxlength="80"></label>
+        <label class="field">ژمارەی مۆبایل<input name="phone" type="tel" inputmode="tel" autocomplete="tel" required dir="ltr" placeholder="07XX XXX XXXX"></label>
+        <label class="field">ڕۆژ<select name="date"></select></label>
+        <label class="field">کات<select name="time"></select></label>
+        <label class="field">ژمارەی کەس<select name="guests"></select></label>
+        <label class="field">ئیمەیڵ (ئارەزووی)<input name="email" type="email" dir="ltr" autocomplete="email"></label>
+        <label class="field full">تێبینی (ئارەزووی)<textarea name="notes" maxlength="500" placeholder="جێگای تایبەت، ڕۆژبوون…"></textarea></label>
+        <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      </div>
+      <button class="btn btn-primary btn-block" type="submit">حیجزکردن</button>
+      <a id="reserveWa" class="btn btn-ghost btn-block" target="_blank" rel="noopener">یان بە واتسئەپ بنێرە</a>
+      <p class="form-msg" role="status" hidden></p>
+    </form>
+  </div></section>
+</main>
+
+  <script defer src="js/config.js"></script>
+  <script defer src="js/menu-data.js"></script>
+  <script defer src="js/core.js"></script>
+  <script defer src="js/layout.js"></script>
+  <script defer src="js/forms.js"></script>
+</body>
+</html>

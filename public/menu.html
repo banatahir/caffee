@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مێنیو | کافێی ئێمە</title>
+  <meta name="description" content="مێنیوی تەواوی کافێی ئێمە: قاوە، شەربەت و سمۆزی، چا، شیرینی و نانی بەیانی. فلتەر، گەڕان و داواکاری ئۆنلاین.">
+  <meta name="theme-color" content="#fbf6ee">
+  <link rel="canonical" href="https://www.example.com/menu.html">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="img/icon-192.png">
+  <link rel="apple-touch-icon" href="img/icon-192.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ckb_IQ">
+  <meta property="og:site_name" content="کافێی ئێمە">
+  <meta property="og:title" content="مێنیو | کافێی ئێمە">
+  <meta property="og:description" content="مێنیوی تەواوی کافێی ئێمە: قاوە، شەربەت و سمۆزی، چا، شیرینی و نانی بەیانی. فلتەر، گەڕان و داواکاری ئۆنلاین.">
+  <meta property="og:url" content="https://www.example.com/menu.html">
+  <meta property="og:image" content="https://www.example.com/img/og-cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="fonts/vazirmatn-arabic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/noto-kufi-arabic-arabic-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>try{var t=localStorage.getItem('cafe-theme');t=t?JSON.parse(t):(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="menu">
+<main>
+  <section class="page-hero"><div class="wrap narrow"><p class="eyebrow">مێنیوەکەمان</p><h1 style="font-size:clamp(2rem,5vw,3.4rem)">هەموو بەرهەمەکانمان لە یەک شوێن</h1><p>فلتەر بکە، بگەڕێ، دڵخوازەکانت پاشەکەوت بکە و بە یەک کلیک زیادیان بکە بۆ سەبەتە.</p></div></section>
+
+  <section class="section" style="padding-top:24px"><div class="wrap">
+    <div class="smart reveal">
+      <div class="smart-box"><span class="ico" aria-hidden="true">🕒</span><div><strong id="greetTitle">بەخێربێیت</strong><span id="greetSub"></span></div><button id="greetBtn" class="text-button" type="button">پیشانی بدە ←</button></div>
+      <div class="smart-box"><span class="ico" aria-hidden="true">✦</span><div><strong>پێشنیاری ئەمڕۆ: <span id="dailyPick">…</span></strong><span id="dailyPickText"></span></div><button id="dailyPickAdd" class="text-button" type="button">+ زیاد بکە</button></div>
+    </div>
+    <div class="menu-tools reveal">
+      <div id="menuTabs" class="chips" role="group" aria-label="جۆرەکانی مێنیو"></div>
+      <label class="search"><span class="sr-only">گەڕان لە مێنیو</span><input id="menuSearch" type="search" placeholder="گەڕان لە مێنیو…" autocomplete="off"></label>
+    </div>
+    <div class="chips" style="margin-bottom:1rem">
+      <button id="favoritesToggle" class="chip favorites-toggle" type="button" aria-pressed="false">♡ دڵخوازەکانم <span>0</span></button>
+      <button id="surprise" class="chip" type="button">🎲 سەرسامم بکە</button>
+      <button id="clearMood" class="chip" type="button">پاککردنەوەی فلتەری هەست</button>
+    </div>
+    <p id="menuResultCount" class="menu-result-count" aria-live="polite"></p>
+    <ul id="menuGrid" class="grid"></ul>
+    <p id="menuEmpty" class="empty" hidden>هیچ ئەنجامێک نەدۆزرایەوە. وشەیەکی تر یان جۆرێکی تر تاقی بکەرەوە.</p>
+    <p class="note center" style="margin-top:2rem">زانیاری هەستیاربوون تەنها ڕێنماییە؛ تکایە پێکهاتەکان لەگەڵ ستافەکە دووپات بکەرەوە.</p>
+  </div></section>
+</main>
+
+  <script defer src="js/config.js"></script>
+  <script defer src="js/menu-data.js"></script>
+  <script defer src="js/core.js"></script>
+  <script defer src="js/layout.js"></script>
+  <script defer src="js/card.js"></script>
+  <script defer src="js/menu.js"></script>
+</body>
+</html>

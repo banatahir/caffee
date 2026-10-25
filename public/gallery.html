@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>گاڵەری | کافێی ئێمە</title>
+  <meta name="description" content="وێنەی قاوە، شەربەت، چا و شیرینییەکانی کافێی ئێمە.">
+  <meta name="theme-color" content="#fbf6ee">
+  <link rel="canonical" href="https://www.example.com/gallery.html">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="img/icon-192.png">
+  <link rel="apple-touch-icon" href="img/icon-192.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ckb_IQ">
+  <meta property="og:site_name" content="کافێی ئێمە">
+  <meta property="og:title" content="گاڵەری | کافێی ئێمە">
+  <meta property="og:description" content="وێنەی قاوە، شەربەت، چا و شیرینییەکانی کافێی ئێمە.">
+  <meta property="og:url" content="https://www.example.com/gallery.html">
+  <meta property="og:image" content="https://www.example.com/img/og-cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="fonts/vazirmatn-arabic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/noto-kufi-arabic-arabic-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>try{var t=localStorage.getItem('cafe-theme');t=t?JSON.parse(t):(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="gallery">
+<main>
+  <section class="page-hero"><div class="wrap narrow"><p class="eyebrow">گاڵەری</p><h1 style="font-size:clamp(2rem,5vw,3.4rem)">تامێکی خۆش، ساتێکی جوان</h1><p>وێنەیەک بکەرەوە بۆ گەورەکردنی؛ بە تیرەکانی کیبۆرد یان بە سووڕاندنی پەنجە بگەڕێ.</p></div></section>
+
+  <section class="section" style="padding-top:20px"><div class="wrap">
+    <div id="galleryFilters" class="chips" style="justify-content:center;margin-bottom:1.6rem" role="group" aria-label="فلتەری وێنەکان"></div>
+    <div id="galleryGrid" class="gallery-grid"></div>
+  </div></section>
+</main>
+
+  <script defer src="js/config.js"></script>
+  <script defer src="js/menu-data.js"></script>
+  <script defer src="js/core.js"></script>
+  <script defer src="js/layout.js"></script>
+  <script defer src="js/gallery.js"></script>
+</body>
+</html>
